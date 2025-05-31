@@ -26,9 +26,9 @@
 This report presents the development of a Convolutional Neural Network (CNN) implemented from scratch. The project demonstrates the fundamental principles of deep learning by building core CNN components including convolution operations, activation functions, pooling layers, and backpropagation algorithms. The implementation will cover both forward pass through each of these layers as well as the detailed computation for the gradients to perform backward pass for the final parameters update. The network was trained and evaluated on a digit classification dataset to validate the correctness of the implementation. The final results show that our CNN achieved good accuracy despite only use a very small architecture and can be comparable to other methods showing its promising performance.
 \end{abstract}
 
-% \begin{IEEEkeywords}
-% component, formatting, style, styling, insert
-% \end{IEEEkeywords}
+\begin{IEEEkeywords}
+CNN, multiclass classification
+\end{IEEEkeywords}
 
 \section{Introduction}
 Convolutional Neural Networks (CNNs) is a deep learning architecture designed primarily for processing grid-like data such as images. Unlike traditional neural networks that treat input as flat vectors, CNNs preserve spatial relationships using some specialized operations. The main breakthrough in a CNN is the idea of applying convolution operations into deep learning, where we use small filters or kernels to detect local features like edges or special patterns. Some pooling layers then are used to reduce spatial dimensions and computational complexity while keeping important features. CNN usually learns by first capturing some low-level features like edges in some first few layers before combining these information to detect much complex patterns in the deeper layers. This allows CNNs to have the ability to detect the local connectivity, reduce the number of parameters through parameter sharing by using the same filters across the entire image and lastly to detect features regardless of the position. These abilities give CNN an edge in dealing with visual task efficiently with a much lower parameters and computational resources needed.
@@ -284,7 +284,7 @@ For the evaluation, we will use accuracy to evaluate the final performance of th
 \end{equation}
 
 \subsection{Result and discussion}
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{training.png}
     \caption{Training loss per epoch}
